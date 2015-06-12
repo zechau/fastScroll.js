@@ -1,0 +1,39 @@
+<!doctype hmtl>
+<html>
+<head>
+	<meta chartset="utf-8">
+	<title>fast scroll</title>
+	<style type="text/css">
+		.to-top{
+			border: 1px solid red;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			height: 100%;
+			border-bottom: 5px solid #CCC;
+		}
+		ul{
+			height: 100%;
+			overflow-y: auto;
+		}
+	</style>
+</head>
+<body>
+	<ul id="list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+	</ul>
+
+	<script src="src/fastScroll.js"></script>
+	<script>
+		(new FastScroll).init(document.getElementById("list"));
+	</script>
+</body>
+</html>
