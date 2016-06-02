@@ -9,7 +9,7 @@
 		}
 		body{
 			margin: 0;
-			padding: 0;
+			padding: 300px;
 		}
 		li{
 			height: 100%;
@@ -33,7 +33,9 @@
 
 	<script src="src/fastScroll.js"></script>
 	<script>
-		(new FastScroll).init(document.getElementById("list"));
+		(new FastScroll).init({
+			element: document.getElementById("list")
+		});
 	</script>
 </body>
 </html>
